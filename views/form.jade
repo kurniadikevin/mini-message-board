@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+  h1= title
+  p New message form
+  form(action="/new", method="POST")
+    div
+        h2 Author 
+        input(type="text")
+    div 
+        h2 Message 
+        input(type="text")
+    button Submit
