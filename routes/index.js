@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+
 const messages = [
   {
     text: "Hi there!",
@@ -14,9 +15,13 @@ const messages = [
   }
 ];
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mini Message Board', messages : messages });
 });
 
+
+
 module.exports = router;
+module.exports.obj = messages;

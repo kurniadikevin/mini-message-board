@@ -8,3 +8,30 @@ body {
 a {
   color: #00B7FF;
 }
+
+.card-cont{
+  margin-bottom: 20px;
+}
+
+.card{
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid white;
+}
+
+.text{
+  padding-bottom: 10px;
+}
+.user{
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.date{
+  font-size: 12px;
+}
+
+#textInput{
+  resize: none;
+  margin-bottom: 20px;
+}
+

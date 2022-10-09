@@ -7,8 +7,9 @@ block content
   form(action="/new", method="POST")
     div
         h2 Author 
-        input(type="text")
+        input(type="text", name="authorInput")
     div 
         h2 Message 
-        input(type="text")
+        textarea( cols="50", rows="5",type="text", name="textInput")#textInput
     button Submit
+

@@ -5,13 +5,16 @@ block content
   h1= title
   p Welcome to #{title}
  
-  .card  
+  a(href="/new") 
+    button.btnNew New
+   .card-cont
     - for (let i=0 ; i < messages.length; i++){
-       div #{messages[0].text}
-       div #{messages[0].user}
-       div #{messages[0].added}
+      .card
+        div.text #{messages[i].text}
+        div.user #{messages[i].user}
+        div.date #{messages[i].added}
     -  }
-   
+  
 
  
   
